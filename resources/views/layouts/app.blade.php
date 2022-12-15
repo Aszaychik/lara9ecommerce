@@ -349,8 +349,8 @@
                                     </li>
                                     <li><a href="blog.html">Blog </a></li>
                                     <li><a href="contact.html">Contact</a></li>
+                                    @auth
                                     <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a>
-                                        @auth
                                             @if (Auth::user()->utype == 'ADM')
 
                                                 <ul class="sub-menu">
