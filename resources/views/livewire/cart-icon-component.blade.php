@@ -10,10 +10,10 @@
             @foreach (Cart::content() as $item)
             <li>
                 <div class="shopping-cart-img">
-                    <a href="{{ route('product.details', ['slug'=>$product->slug]) }}"><img alt="{{ $item->model->name }}" src="{{ asset('assets/imgs/shop/product-')}}{{ $item->model->id }}-1.jpg"></a>
+                    <a href="{{ route('product.details', ['slug'=>$item->model->slug]) }}"><img alt="{{ $item->model->name }}" src="{{ asset('assets/imgs/shop/product-')}}{{ $item->model->id }}-1.jpg"></a>
                 </div>
                 <div class="shopping-cart-title">
-                    <h4><a href="{{ route('product.details', ['slug'=>$product->slug]) }}">{{ substr($item->model->name, 0, 20) }}...</a></h4>
+                    <h4><a href="{{ route('product.details', ['slug'=>$item->model->slug]) }}">{{ substr($item->model->name, 0, 20) }}...</a></h4>
                     <h4><span>{{ $item->qty }} × </span>${{ $item->model->regular_price }}</h4>
                 </div>
                 {{-- <div class="shopping-cart-delete">
