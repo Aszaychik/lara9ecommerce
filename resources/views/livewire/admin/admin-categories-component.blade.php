@@ -36,13 +36,17 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($categories as $key => $category)
+                                        @php
+                                            $i = ($categories->currentpage()-1) * $categories->perpage() + 1;
+                                        @endphp
+                                        @foreach ($categories as $category)
                                             <tr>
-                                                <td>{{ $key+=1 }}</td>
+                                                <td>{{ $i }}</td>
                                                 <td>{{ $category->name }}</td>
-                                                <td>{{ $category->slug }}</td>
+                                                <td><a href="{{ route('product.category', ['slug' => $category->slug]) }}">{{ $category->slug }}</a></td>
                                                 <td></td>
                                             </tr>
+                                            @php $i++ @endphp
                                         @endforeach
                                     </tbody>
                                 </table>
