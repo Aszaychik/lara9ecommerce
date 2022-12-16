@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="breadcrumb">
                     <a href="index.html" rel="nofollow">Home</a>
-                    <span></span> Fashion
-                    <span></span> Abstract Print Patchwork Dress
+                    <span></span> Product
+                    <span></span> {{ $slug }}
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                                             <figure class="border-radius-10">
                                                 <img src="{{ asset('assets/imgs/products')}}/{{ $product->image }}" alt="product image">
                                             </figure>
-                                            <figure class="border-radius-10">
+                                            {{-- <figure class="border-radius-10">
                                                 <img src="{{ asset('assets/imgs/products/product-16-1.jpg') }}" alt="product image">
                                             </figure>
                                             <figure class="border-radius-10">
@@ -40,9 +40,9 @@
                                             </figure>
                                             <figure class="border-radius-10">
                                                 <img src="{{ asset('assets/imgs/products/product-16-7.jpg') }}" alt="product image">
-                                            </figure>
+                                            </figure> --}}
                                         </div>
-                                        <!-- THUMBNAILS -->
+                                        {{-- <!-- THUMBNAILS -->
                                         <div class="slider-nav-thumbnails pl-15 pr-15">
                                             <div><img src="{{ asset('assets/imgs/products/thumbnail-3.jpg') }}" alt="product image"></div>
                                             <div><img src="{{ asset('assets/imgs/products/thumbnail-4.jpg') }}" alt="product image"></div>
@@ -51,7 +51,7 @@
                                             <div><img src="{{ asset('assets/imgs/products/thumbnail-7.jpg') }}" alt="product image"></div>
                                             <div><img src="{{ asset('assets/imgs/products/thumbnail-8.jpg') }}" alt="product image"></div>
                                             <div><img src="{{ asset('assets/imgs/products/thumbnail-9.jpg') }}" alt="product image"></div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <!-- End Gallery -->
                                     <div class="social-icons single-share">
@@ -133,9 +133,8 @@
                                             </div>
                                         </div>
                                         <ul class="product-meta font-xs color-grey mt-50">
-                                            <li class="mb-5">SKU: <a href="#">FWM15VKT</a></li>
-                                            <li class="mb-5">Tags: <a href="#" rel="tag">Cloth</a>, <a href="#" rel="tag">Women</a>, <a href="#" rel="tag">Dress</a> </li>
-                                            <li>Availability:<span class="in-stock text-success ml-5">8 Items In Stock</span></li>
+                                            <li class="mb-5">SKU: <a href="#">{{ $product->SKU}}</a></li>
+                                            <li class="mb-5">Tags: <a href="{{ route('product.category', ['slug' => $product->category->slug]) }}" rel="tag">{{ $product->category->name }}</a>
                                         </ul>
                                     </div>
                                     <!-- Detail Info -->
@@ -438,8 +437,8 @@
                                                 <div class="product-img-action-wrap">
                                                     <div class="product-img product-img-zoom">
                                                         <a href="{{ route('product.details', ['slug'=> $rproduct->slug]) }}" tabindex="0">
-                                                            <img class="default-img" src="{{ asset('assets/imgs/shop/product-')}}{{$rproduct->id}}-1.jpg" alt="{{$rproduct->name}}">
-                                                            <img class="hover-img" src="{{ asset('assets/imgs/shop/product-2-2.jpg') }}" alt="">
+                                                            <img class="default-img" src="{{ asset('assets/imgs/products')}}/{{ $rproduct->image }}" alt="{{$rproduct->name}}">
+                                                            <img class="hover-img" src="{{ asset('assets/imgs/products')}}/{{ $product->image }}" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="product-action-1">
@@ -474,13 +473,10 @@
                         <div class="widget-category mb-30">
                             <h5 class="section-title style-1 mb-30 wow fadeIn animated">Category</h5>
                             <ul class="categories">
+                                {{-- @foreach ($products as $product) --}}
+
                                 <li><a href="shop.html">Shoes & Bags</a></li>
-                                <li><a href="shop.html">Blouses & Shirts</a></li>
-                                <li><a href="shop.html">Dresses</a></li>
-                                <li><a href="shop.html">Swimwear</a></li>
-                                <li><a href="shop.html">Beauty</a></li>
-                                <li><a href="shop.html">Jewelry & Watch</a></li>
-                                <li><a href="shop.html">Accessories</a></li>
+                                {{-- @endforeach --}}
                             </ul>
                         </div>
                         <!-- Fillter By Price -->
@@ -536,7 +532,7 @@
                             @foreach ($nproducts as $nproduct)
                             <div class="single-post clearfix">
                                 <div class="image">
-                                    <img src="{{ asset('assets/imgs/shop/product-')}}{{ $nproduct->id }}-1.jpg" alt="{{ $nproduct->name }}">
+                                    <img src="{{ asset('assets/imgs/products')}}/{{ $nproduct->image }}" alt="{{ $nproduct->name }}">
                                 </div>
                                 <div class="content pt-10">
                                     <h5><a href="{{ route('product.details', ['slug'=> $nproduct->slug]) }}">{{ $nproduct->name }}</a></h5>
