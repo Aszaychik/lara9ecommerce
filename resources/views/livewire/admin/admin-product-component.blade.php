@@ -28,7 +28,7 @@
                                         All products
                                     </div>
                                     <div class="col-md-6">
-
+                                        <a href="{{ route('admin.product.add') }}" class="btn btn-success float-end">Add New Product</a>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                         @foreach ($products as $product)
                                             <tr>
                                                 <td>{{ ++$i }}</td>
-                                                <td><img src="{{ asset('assets/imgs/shop/product-')}}{{ $product->id }}-1.jpg" alt="{{ $product->name }}"  width="60" /></td>
+                                                <td><img src="{{ asset('assets/imgs/products')}}/{{ $product->image }}" alt="{{ $product->name }}"  width="60" /></td>
                                                 <td><a href="{{ route('product.details', ['slug' => $product->slug]) }}">{{ $product->name }}</a></td>
                                                 <td>{{ $product->stock_status }}</td>
                                                 <td>{{ $product->regular_price }}</td>
