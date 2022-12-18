@@ -121,7 +121,7 @@
                                         @if ($newImage)
                                             <img src="{{ $newImage->temporaryUrl() }}" width="120" alt="">
                                         @else
-                                            <img src="{{ asset('assets/imgs/products') }}/{{ $newImage }}" width="120" alt="">
+                                            <img src="{{ asset('assets/imgs/products') }}/{{ $image }}" width="120" alt="">
                                         @endif
                                         @error('newImage')
                                             <p class="text-danger">{{ $message }}</p>
