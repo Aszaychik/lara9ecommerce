@@ -63,6 +63,7 @@
                                                 <td><a href="{{ route('product.category', ['slug' => $product->category->slug]) }}">{{ $product->category->name }}</td>
                                                 <td>{{ $product->created_at }}</td>
                                                 <td class="">
+                                                    <a href="{{ route('admin.product.edit', ['product_id'=>$product->id]) }}"  class="text-info">Edit</a>
                                                 </td>
                                             </tr>
                                         @endforeach
