@@ -8,7 +8,7 @@
         }
 
         .wishlisted{
-            background-color: #f15412 !important;
+            background-color: #d90429 !important;
             border: 1px solid transparent !important;
         }
 

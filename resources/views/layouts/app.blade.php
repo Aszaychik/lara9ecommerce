@@ -55,7 +55,7 @@
                                     <i class="fi-rs-user"></i> {{ Auth::user()->name }}  /
                                     <form action="{{ route('logout') }}" method="POST">
                                         @csrf
-                                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit()">Logout</a>
+                                        <a class="text-white" href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit()">Logout</a>
                                     </form>
                                 </li>
                             </ul>
