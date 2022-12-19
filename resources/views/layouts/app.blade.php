@@ -658,6 +658,8 @@
             </div>
         </div>
     </footer>
+<!-- TODO: Remove ".sandbox" from script src URL for production environment. Also input your client key in "data-client-key" -->
+<script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ config('services.midtrans.clientKey') }}"></script>
     <!-- Vendor JS-->
 <script src="{{asset("assets/js/vendor/modernizr-3.6.0.min.js")}}"></script>
 <script src="{{asset("assets/js/vendor/jquery-3.6.0.min.js")}}"></script>
