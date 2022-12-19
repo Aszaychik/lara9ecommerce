@@ -59,7 +59,7 @@
                                                 <td><img src="{{ asset('assets/imgs/products')}}/{{ $product->image }}" alt="{{ $product->name }}"  width="60" /></td>
                                                 <td><a href="{{ route('product.details', ['slug' => $product->slug]) }}">{{ $product->name }}</a></td>
                                                 <td>{{ $product->stock_status }}</td>
-                                                <td>{{ $product->regular_price }}</td>
+                                                <td>{{ number_format($product->regular_price,0,',','.') }}</td>
                                                 <td><a href="{{ route('product.category', ['slug' => $product->category->slug]) }}">{{ $product->category->name }}</td>
                                                 <td>{{ $product->created_at }}</td>
                                                 <td class="">

@@ -110,16 +110,16 @@
                                             </span>
                                         </div>
                                         <div class="product-price">
-                                            <span>Rp{{ $product->regular_price }} </span>
+                                            <span>Rp{{ number_format($product->regular_price,0,',','.') }} </span>
                                             {{-- <span class="old-price">$245.8</span> --}}
                                         </div>
                                         <div class="product-action-1 show">
                                             @if($witems->contains($product->id))
                                             <a aria-label="Remove To Wishlist" class="action-btn hover-up  wishlisted" href="#" wire:click.prevent="removeFromWishlist({{ $product->id }})"><i class="fi-rs-heart"></i></a>
                                             @else
-                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="#" wire:click.prevent="addToWishlist({{ $product->id}}, '{{ $product->name }}', {{ $product->regular_price }})"><i class="fi-rs-heart"></i></a>
+                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="#" wire:click.prevent="addToWishlist({{ $product->id}}, '{{ $product->name }}', {{ number_format($product->regular_price,0,',','.') }})"><i class="fi-rs-heart"></i></a>
                                             @endif
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $product->id}}, '{{ $product->name }}',  {{ $product->regular_price }})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $product->id}}, '{{ $product->name }}',  {{ number_format($product->regular_price,0,',','.') }})"><i class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                                     <div id="slider-range" wire:ignore></div>
                                     <div class="price_slider_amount">
                                         <div class="label-input">
-                                            <span>Range:</span><span class="text-info">Rp{{ $min_value }}</span> - <span class="text-info">Rp{{ $max_value }}</span>
+                                            <span>Range:</span><span class="text-info">Rp{{ number_format($min_value, 0, ',', '.') }}</span> - <span class="text-info">Rp{{ number_format($max_value, 0, ',', '.') }}</span>
                                         </div>
                                     </div>
                                 </div>

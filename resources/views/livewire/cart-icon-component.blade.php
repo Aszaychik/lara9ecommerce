@@ -14,7 +14,7 @@
                 </div>
                 <div class="shopping-cart-title">
                     <h4><a href="{{ route('product.details', ['slug'=>$item->model->slug]) }}">{{ substr($item->model->name, 0, 20) }}...</a></h4>
-                    <h4><span>{{ $item->qty }} × </span>Rp{{ $item->model->regular_price }}</h4>
+                    <h4><span>{{ $item->qty }} × </span>Rp{{ number_format($item->model->regular_price ,0,',','.') }}</h4>
                 </div>
                 {{-- <div class="shopping-cart-delete">
                     <a href="#"><i class="fi-rs-cross-small"></i></a>

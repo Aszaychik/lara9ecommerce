@@ -8,7 +8,7 @@
         }
 
         .wishlisted{
-            background-color: #d90429 !important;
+            background-color: #f15412 !important;
             border: 1px solid transparent !important;
         }
 
@@ -64,17 +64,17 @@
                                     </span>
                                 </div>
                                 <div class="product-price">
-                                    <span>Rp{{ $item->model->regular_price }} </span>
+                                    <span>Rp{{ number_format($item->model->regular_price ,0,',','.') }} </span>
                                     {{-- <span class="old-price">$245.8</span> --}}
                                 </div>
                                 <div class="product-action-1 show">
                                     {{-- @if($witems->contains($item->model->id))
                                     @else
-                                    <a aria-label="Add To Wishlist" class="action-btn hover-up" href="#" wire:click.prevent="addToWishlist({{ $item->model->id}}, '{{ $item->model->name }}', {{ $item->model->regular_price }})"><i class="fi-rs-heart"></i></a>
+                                    <a aria-label="Add To Wishlist" class="action-btn hover-up" href="#" wire:click.prevent="addToWishlist({{ $item->model->id}}, '{{ $item->model->name }}', {{ number_format($item->model->regular_price ,0,',','.') }})"><i class="fi-rs-heart"></i></a>
                                     @endif --}}
                                     <a aria-label="Remove To Wishlist" class="action-btn hover-up  wishlisted" href="#" wire:click.prevent="removeFromWishlist({{ $item->model->id }})"><i class="fi-rs-heart"></i></a>
 
-                                    {{-- <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $item->model->id}}, '{{ $item->model->name }}',  {{ $item->model->regular_price }})"><i class="fi-rs-shopping-bag-add"></i></a> --}}
+                                    {{-- <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $item->model->id}}, '{{ $item->model->name }}',  {{ number_format($item->model->regular_price ,0,',','.') }})"><i class="fi-rs-shopping-bag-add"></i></a> --}}
                                 </div>
                             </div>
                         </div>
