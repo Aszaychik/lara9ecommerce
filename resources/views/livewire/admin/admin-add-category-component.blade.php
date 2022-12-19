@@ -56,16 +56,16 @@
                                     <div class="mb-3 mt-3">
                                         <label for="image" class="form-label">Image</label>
                                         <input type="file" class="form-control" name="image" wire:model="image">
+                                        @if ($image)
+                                            <img src="{{ $image->temporaryUrl() }}" width="120" alt="">
+                                        @endif
                                         @error('image')
                                             <p class="text-danger">{{ $message }}</p>
                                         @enderror
-                                        @if ($image)
-                                            <img src="{{ $image->temporaryUrl() }}" alt="" width="120">
-                                        @endif
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="is_popular" class="form-label">Popular</label>
-                                        <select class="form-control" name="is_popular" id="" w:model="is_popular">
+                                        <select class="form-control" name="is_popular" id="" wire:model="is_popular">
                                             <option value="0">No</option>
                                             <option value="1">Yes</option>
                                         </select>

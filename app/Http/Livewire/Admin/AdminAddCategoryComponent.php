@@ -42,6 +42,7 @@ class AdminAddCategoryComponent extends Component
         $category->slug = $this->slug;
         $imageName = Carbon::now()->timestamp.'.'.$this->image->extension();
         $this->image->storeAs('categories', $imageName);
+        $category->image = $imageName;
         $category->is_popular = $this->is_popular;
         $category->save();
         session()->flash('message', 'Category has been created successfully!');

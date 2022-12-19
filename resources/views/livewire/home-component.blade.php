@@ -769,14 +769,13 @@
                     <div class="slider-arrow slider-arrow-2 carausel-6-columns-arrow" id="carausel-6-columns-arrows"></div>
                     <div class="carausel-6-columns" id="carausel-6-columns">
                         @foreach ($pcategories as $pcategory)
-
-                        @endforeach
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
                                 <a href="{{ route('product.category', ['slug'=> $pcategory->slug]) }}"><img src="{{ asset('assets/imgs/categories') }}/{{ $pcategory->image }}" alt="{{ $pcategory->name }}"></a>
                             </figure>
-                        <h5><a href="{{ route('product.category', ['slug'=> $pcategory->slug]) }}">{{ $pcategory->name }}</a></h5>
+                            <h5><a href="{{ route('product.category', ['slug'=> $pcategory->slug]) }}">{{ $pcategory->name }}</a></h5>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

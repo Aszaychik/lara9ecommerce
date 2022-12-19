@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="mb-3 mt-3">
                                         <label for="is_popular" class="form-label">Popular</label>
-                                        <select class="form-control" name="is_popular" id="" w:model="is_popular">
+                                        <select class="form-control" name="is_popular" id="" wire:model="is_popular">
                                             <option value="0">No</option>
                                             <option value="1">Yes</option>
                                         </select>
