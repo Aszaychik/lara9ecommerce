@@ -110,7 +110,7 @@
                                             </span>
                                         </div>
                                         <div class="product-price">
-                                            <span>${{ $product->regular_price }} </span>
+                                            <span>Rp{{ $product->regular_price }} </span>
                                             {{-- <span class="old-price">$245.8</span> --}}
                                         </div>
                                         <div class="product-action-1 show">
@@ -157,7 +157,7 @@
                         <!-- Fillter By Price -->
                         <div class="sidebar-widget price_range range mb-30">
                             <div class="widget-header position-relative mb-20 pb-10">
-                                <h5 class="widget-title mb-10">Filterl by price</h5>
+                                <h5 class="widget-title mb-10">Filter by price</h5>
                                 <div class="bt-1 border-color-1"></div>
                             </div>
                             <div class="price-filter">
@@ -165,7 +165,7 @@
                                     <div id="slider-range" wire:ignore></div>
                                     <div class="price_slider_amount">
                                         <div class="label-input">
-                                            <span>Range:</span><span class="text-info">${{ $min_value }}</span> - <span class="text-info">${{ $max_value }}</span>
+                                            <span>Range:</span><span class="text-info">Rp{{ $min_value }}</span> - <span class="text-info">Rp{{ $max_value }}</span>
                                         </div>
                                     </div>
                                 </div>

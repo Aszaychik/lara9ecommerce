@@ -81,7 +81,7 @@
                                         </div>
                                         <div class="clearfix product-price-cover">
                                             <div class="product-price primary-color float-left">
-                                                <ins><span class="text-brand">${{ $product->regular_price }}</span></ins>
+                                                <ins><span class="text-brand">Rp{{ $product->regular_price }}</span></ins>
                                                 {{-- <ins><span class="old-price font-md ml-15">$200.00</span></ins> --}}
                                                 {{-- <span class="save-price  font-md color3 ml-15">25% Off</span> --}}
                                             </div>
@@ -457,7 +457,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="product-price">
-                                                        <span>${{ $rproduct->regular_price }} </span>
+                                                        <span>Rp{{ $rproduct->regular_price }} </span>
                                                         {{-- <span class="old-price">$245.8</span> --}}
                                                     </div>
                                                 </div>
@@ -536,7 +536,7 @@
                                 </div>
                                 <div class="content pt-10">
                                     <h5><a href="{{ route('product.details', ['slug'=> $nproduct->slug]) }}">{{ $nproduct->name }}</a></h5>
-                                    <p class="price mb-0 mt-5">${{ $nproduct->regular_price }}</p>
+                                    <p class="price mb-0 mt-5">Rp{{ $nproduct->regular_price }}</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width:90%"></div>
                                     </div>

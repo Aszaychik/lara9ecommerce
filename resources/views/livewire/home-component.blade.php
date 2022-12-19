@@ -120,7 +120,7 @@
                                                 </span>
                                             </div>
                                             <div class="product-price">
-                                                <span>${{ $fproduct->regular_price }}</span>
+                                                <span>Rp{{ $fproduct->regular_price }}</span>
                                                 {{-- <span class="old-price">$245.8</span> --}}
                                             </div>
                                             <div class="product-action-1 show">
@@ -750,7 +750,7 @@
                 <!--End tab-content-->
             </div>
         </section>
-        <section class="banner-2 section-padding pb-0">
+        {{-- <section class="banner-2 section-padding pb-0">
             <div class="container">
                 <div class="banner-img banner-big wow fadeIn animated f-none">
                     <img src="assets/imgs/banner/banner-4.png" alt="">
@@ -761,7 +761,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <section class="popular-categories section-padding mt-15 mb-25">
             <div class="container wow fadeIn animated">
                 <h3 class="section-title mb-20"><span>Popular</span> Categories</h3>
@@ -780,7 +780,7 @@
                 </div>
             </div>
         </section>
-        <section class="banners mb-15">
+        {{-- <section class="banners mb-15">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
@@ -815,7 +815,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <section class="section-padding">
             <div class="container wow fadeIn animated">
                 <h3 class="section-title mb-20"><span>New</span> Arrivals</h3>
@@ -848,7 +848,7 @@
                                         </span>
                                     </div>
                                     <div class="product-price">
-                                        <span>${{ $lproduct->regular_price }} </span>
+                                        <span>Rp{{ $lproduct->regular_price }} </span>
                                         {{-- <span class="old-price">$245.8</span> --}}
                                     </div>
                                 </div>

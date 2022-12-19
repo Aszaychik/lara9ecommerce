@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-<title>Surfside Media</title>
+<title>ASZShop</title>
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -317,7 +317,7 @@
                                             </li>
                                             <li class="sub-mega-menu sub-mega-menu-width-34">
                                                 <div class="menu-banner-wrap">
-                                                    <a href="product-details.html"><img src="assets/imgs/banner/menu-banner.jpg" alt="Surfside Media"></a>
+                                                    <a href="product-details.html"><img src="assets/imgs/banner/menu-banner.jpg" alt="ASZShop"></a>
                                                     <div class="menu-banner-content">
                                                         <h4>Hot deals</h4>
                                                         <h3>Don't miss<br> Trending</h3>
@@ -368,27 +368,27 @@
                         </div>
                     </div>
                     <div class="hotline d-none d-lg-block">
-                        <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+1) 0000-000-000 </p>
+                        <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+62) 895-1975-0202 </p>
                     </div>
                     <p class="mobile-promotion">Happy <span class="text-brand">Mother's Day</span>. Big Sale Up to 40%</p>
                     <div class="header-action-right d-block d-lg-none">
                         <div class="header-action-2">
                             <div class="header-action-icon-2">
                                 <a href="shop-wishlist.php">
-                                    <img alt="Surfside Media" src="assets/imgs/theme/icons/icon-heart.svg">
+                                    <img alt="ASZShop" src="assets/imgs/theme/icons/icon-heart.svg">
                                     <span class="pro-count white">4</span>
                                 </a>
                             </div>
                             <div class="header-action-icon-2">
                                 <a class="mini-cart-icon" href="cart.html">
-                                    <img alt="Surfside Media" src="assets/imgs/theme/icons/icon-cart.svg">
+                                    <img alt="ASZShop" src="assets/imgs/theme/icons/icon-cart.svg">
                                     <span class="pro-count white">2</span>
                                 </a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2">
                                     <ul>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-3.jpg"></a>
+                                                <a href="product-details.html"><img alt="ASZShop" src="assets/imgs/shop/thumbnail-3.jpg"></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="product-details.html">Plain Striola Shirts</a></h4>
@@ -400,7 +400,7 @@
                                         </li>
                                         <li>
                                             <div class="shopping-cart-img">
-                                                <a href="product-details.html"><img alt="Surfside Media" src="assets/imgs/shop/thumbnail-4.jpg"></a>
+                                                <a href="product-details.html"><img alt="ASZShop" src="assets/imgs/shop/thumbnail-4.jpg"></a>
                                             </div>
                                             <div class="shopping-cart-title">
                                                 <h4><a href="product-details.html">Macbook Pro 2022</a></h4>
@@ -531,14 +531,13 @@
                         <a href="register.html">Sign Up</a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="#">(+1) 0000-000-000 </a>
+                        <a href="#">(+62) 895-1975-0202 </a>
                     </div>
                 </div>
                 <div class="mobile-social-icon">
                     <h5 class="mb-15 text-grey-4">Follow Us</h5>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt=""></a>
+                    <a href="https://www.facebook.com/AsZaychik/"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
+                    <a href="https://twitter.com/ZaychikAs"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
                     <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a>
                     <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt=""></a>
                 </div>
@@ -584,18 +583,18 @@
                             </div>
                             <h5 class="mt-20 mb-10 fw-600 text-grey-4 wow fadeIn animated">Contact</h5>
                             <p class="wow fadeIn animated">
-                                <strong>Address: </strong>562 Wellington Road
+                                <strong>Address: </strong>Indonesia
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Phone: </strong>+1 0000-000-000
+                                <strong>Phone: </strong>+62 89519750202
                             </p>
                             <p class="wow fadeIn animated">
-                                <strong>Email: </strong>contact@surfsidemedia.in
+                                <strong>Email: </strong>Aszaychik@gmail.com
                             </p>
                             <h5 class="mb-10 mt-30 fw-600 text-grey-4 wow fadeIn animated">Follow Us</h5>
                             <div class="mobile-social-icon wow fadeIn animated mb-sm-5 mb-md-0">
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
-                                <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
+                                <a href="https://www.facebook.com/AsZaychik/"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
+                                <a href="https://twitter.com/ZaychikAs"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
                                 <a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt=""></a>
                                 <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a>
                                 <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt=""></a>
@@ -653,7 +652,7 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="text-lg-end text-start font-sm text-muted mb-0">
-                        &copy; <strong class="text-brand">SurfsideMedia</strong> All rights reserved
+                        &copy; <strong class="text-brand">AsZaychik</strong> All rights reserved
                     </p>
                 </div>
             </div>
