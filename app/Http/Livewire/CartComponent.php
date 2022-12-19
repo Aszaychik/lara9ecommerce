@@ -7,6 +7,14 @@ use Cart;
 
 class CartComponent extends Component
 {
+    public $name;
+    public $email;
+    public $phone;
+    public $city;
+    public $address;
+    public $post_code;
+    public $formCheckout;
+
     public function increaseQuantity($rowId)
     {
         $product = Cart::instance('cart')->get($rowId);
@@ -39,6 +47,24 @@ class CartComponent extends Component
         $this->emitTo('cart-icon-component', 'refreshComponent');
 
     }
+
+    public function checkout()
+    {
+        $this->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'city' => 'required',
+            'address' => 'required',
+            'post_code' => 'required',
+        ]);
+    }
+
+    public function mount()
+    {
+        $this->formCheckout = true;
+    }
+
 
     public function render()
     {

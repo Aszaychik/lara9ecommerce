@@ -139,7 +139,7 @@
                                             <p class="text-danger">{{ $message }}</p>
                                         @enderror
                                     </div>
-                                    <button type="submit" class="btn btn-primary float-end">Update</button>
+                                    <button type="submit" class="btn float-end">Update</button>
                                 </form>
                             </div>
                         </div>
