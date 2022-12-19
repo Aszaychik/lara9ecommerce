@@ -24,9 +24,9 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info">
-                        <ul>
+                            <ul>
                                 <li>
-                                    <a class="language-dropdown-active" href="#"> <i class="fi-rs-world"></i> English <i class="fi-rs-angle-small-down"></i></a>
+                                    <a class="language-dropdown-active text-white" href="#"> <i class="fi-rs-world"></i> English <i class="fi-rs-angle-small-down"></i></a>
                                     <ul class="language-dropdown">
                                         <li><a href="#"><img src="assets/imgs/theme/flag-fr.png" alt="">Français</a></li>
                                         <li><a href="#"><img src="assets/imgs/theme/flag-dt.png" alt="">Deutsch</a></li>
@@ -281,7 +281,7 @@
                                     <li><a class="active" href="/">Home </a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="{{ route('shop') }}">Shop</a></li>
-                                    <li class="position-static"><a href="#">Our Collections <i class="fi-rs-angle-down"></i></a>
+                                    {{-- <li class="position-static"><a href="#">Our Collections <i class="fi-rs-angle-down"></i></a>
                                         <ul class="mega-menu">
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
                                                 <a class="menu-title" href="#">Women's Fashion</a>
@@ -337,7 +337,7 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> --}}
                                     <li><a href="blog.html">Blog </a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     @auth
