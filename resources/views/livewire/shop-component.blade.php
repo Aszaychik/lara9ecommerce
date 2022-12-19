@@ -104,11 +104,11 @@
                                             <a href="shop.html">Music</a>
                                         </div>
                                         <h2><a href="product-details.html">{{ $product->name }}</a></h2>
-                                        <div class="rating-result" title="90%">
+                                        {{-- <div class="rating-result" title="90%">
                                             <span>
                                                 <span>90%</span>
                                             </span>
-                                        </div>
+                                        </div> --}}
                                         <div class="product-price">
                                             <span>Rp{{ number_format($product->regular_price,0,',','.') }} </span>
                                             {{-- <span class="old-price">$245.8</span> --}}
@@ -117,9 +117,10 @@
                                             @if($witems->contains($product->id))
                                             <a aria-label="Remove To Wishlist" class="action-btn hover-up  wishlisted" href="#" wire:click.prevent="removeFromWishlist({{ $product->id }})"><i class="fi-rs-heart"></i></a>
                                             @else
-                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="#" wire:click.prevent="addToWishlist({{ $product->id}}, '{{ $product->name }}', {{ number_format($product->regular_price,0,',','.') }})"><i class="fi-rs-heart"></i></a>
+                                            <a aria-label="Add To Wishlist" class="action-btn hover-up" href="#" wire:click.prevent="addToWishlist({{ $product->id}}, '{{ $product->name }}', {{ $product->regular_price }})"><i class="fi-rs-heart"></i></a>
                                             @endif
-                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $product->id}}, '{{ $product->name }}',  {{ number_format($product->regular_price,0,',','.') }})"><i class="fi-rs-shopping-bag-add"></i></a>
+                                            {{-- <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $product->id}}, '{{ $product->name }}',  {{ number_format($product->regular_price,0,',','.') }})"><i class="fi-rs-shopping-bag-add"></i></a> --}}
+                                            <a aria-label="Add To Cart" class="action-btn hover-up" href="#" wire:click.prevent="store({{ $product->id }}, '{{ $product->name }}', {{ $product->regular_price }})"><i class="fi-rs-shopping-bag-add"></i></a>
                                         </div>
                                     </div>
                                 </div>
