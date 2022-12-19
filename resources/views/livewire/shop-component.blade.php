@@ -199,7 +199,7 @@
                             <a href="shop.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                         </div>
                         <!-- Product sidebar Widget -->
-                        <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
+                        {{-- <div class="sidebar-widget product-sidebar  mb-30 p-30 bg-grey border-radius-10">
                             <div class="widget-header position-relative mb-20 pb-10">
                                 <h5 class="widget-title mb-10">New products</h5>
                                 <div class="bt-1 border-color-1"></div>
@@ -240,15 +240,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="banner-img wow fadeIn mb-45 animated d-lg-block d-none">
+                        </div> --}}
+                        {{-- <div class="banner-img wow fadeIn mb-45 animated d-lg-block d-none">
                             <img src="{{ asset('assets/imgs/banner/banner-11.jpg') }}" alt="">
                             <div class="banner-text">
                                 <span>Women Zone</span>
                                 <h4>Save 17% on <br>Office Dress</h4>
                                 <a href="shop.html">Shop Now <i class="fi-rs-arrow-right"></i></a>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -264,8 +264,8 @@
         sliderrange.slider({
             range: true,
             min: 0,
-            max: 1000,
-            values: [0, 1000],
+            max: 10000000,
+            values: [0, 10000000],
             slide: function(event, ui) {
                 // amountprice.val("$" + ui.values[0] + " - $" + ui.values[1]);
                 @this.set('min_value', ui.values[0])
