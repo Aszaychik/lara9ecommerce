@@ -548,7 +548,7 @@
     {{ $slot }}
 
     <footer class="main">
-        <section class="newsletter p-30 text-white wow fadeIn animated">
+        {{-- <section class="newsletter p-30 text-white wow fadeIn animated">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7 mb-md-3 mb-lg-0">
@@ -572,7 +572,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <section class="section-padding footer-mid">
             <div class="container pt-15 pb-20">
                 <div class="row">

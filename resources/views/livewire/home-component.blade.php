@@ -600,7 +600,7 @@
             </div>
         </section>
 
-        <section class="section-padding">
+        {{-- <section class="section-padding">
             <div class="container">
                 <h3 class="section-title mb-20 wow fadeIn animated"><span>Featured</span> Brands</h3>
                 <div class="carausel-6-columns-cover position-relative wow fadeIn animated">
@@ -630,7 +630,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
     </main>
 </div>
