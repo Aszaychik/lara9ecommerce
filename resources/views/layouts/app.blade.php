@@ -60,7 +60,7 @@
                             </ul>
                             @else
                             <ul>
-                                <li><i class="fi-rs-key"></i><a href="{{ route('login') }}">Log In </a>  / <a href="{{ route('register') }}">Sign Up</a></li>
+                                <li class=""><i class="fi-rs-key "></i><a href="{{ route('login') }}" class="text-white">Log In </a>  / <a href="{{ route('register') }}" class="text-white">Sign Up</a></li>
                             </ul>
                             @endif
                         </div>
