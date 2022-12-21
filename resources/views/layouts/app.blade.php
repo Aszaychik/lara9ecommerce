@@ -40,9 +40,8 @@
                         <div class="text-center">
                             <div id="news-flash" class="d-inline-block">
                                 <ul>
-                                    <li>Get great devices up to 50% off <a href="shop.html">View details</a></li>
+                                    <li>Get great devices up to 50% off <a href="{{ route('shop') }}">View details</a></li>
                                     <li>Supper Value Deals - Save more with coupons</li>
-                                    <li>Trendy 25silver jewelry, save up 35% off today <a href="shop.html">Shop now</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,10 +94,10 @@
                     </div>
                     <div class="header-nav d-none d-lg-flex">
                         <div class="main-categori-wrap d-none d-lg-block">
-                            <a class="categori-button-active" href="#">
+                            <a class="categori-button-active" href="{{ route('shop') }}">
                                 <span class="fi-rs-apps"></span> Browse Categories
                             </a>
-                            <div class="categori-dropdown-wrap categori-dropdown-active-large">
+                            {{-- <div class="categori-dropdown-wrap categori-dropdown-active-large">
                                 <ul>
                                     <li class="has-children">
                                         <a href="shop.html"><i class="surfsidemedia-font-dress"></i>Women's Clothing</a>
@@ -273,7 +272,7 @@
                                     </li>
                                 </ul>
                                 <div class="more_categories">Show more...</div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block">
                             <nav>
@@ -370,57 +369,14 @@
                     <div class="hotline d-none d-lg-block">
                         <p><i class="fi-rs-smartphone"></i><span>Toll Free</span> (+62) 895-1975-0202 </p>
                     </div>
-                    <p class="mobile-promotion">Happy <span class="text-brand">Mother's Day</span>. Big Sale Up to 40%</p>
                     <div class="header-action-right d-block d-lg-none">
                         <div class="header-action-2">
                             <div class="header-action-icon-2">
-                                <a href="shop-wishlist.php">
-                                    <img alt="ASZShop" src="assets/imgs/theme/icons/icon-heart.svg">
-                                    <span class="pro-count white">4</span>
-                                </a>
+                                @livewire('wishlist-icon-component')
                             </div>
                             <div class="header-action-icon-2">
-                                <a class="mini-cart-icon" href="cart.html">
-                                    <img alt="ASZShop" src="assets/imgs/theme/icons/icon-cart.svg">
-                                    <span class="pro-count white">2</span>
-                                </a>
-                                <div class="cart-dropdown-wrap cart-dropdown-hm2">
-                                    <ul>
-                                        <li>
-                                            <div class="shopping-cart-img">
-                                                <a href="product-details.html"><img alt="ASZShop" src="assets/imgs/shop/thumbnail-3.jpg"></a>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="product-details.html">Plain Striola Shirts</a></h4>
-                                                <h3><span>1 × </span>$800.00</h3>
-                                            </div>
-                                            <div class="shopping-cart-delete">
-                                                <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="shopping-cart-img">
-                                                <a href="product-details.html"><img alt="ASZShop" src="assets/imgs/shop/thumbnail-4.jpg"></a>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="product-details.html">Macbook Pro 2022</a></h4>
-                                                <h3><span>1 × </span>$3500.00</h3>
-                                            </div>
-                                            <div class="shopping-cart-delete">
-                                                <a href="#"><i class="fi-rs-cross-small"></i></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="shopping-cart-footer">
-                                        <div class="shopping-cart-total">
-                                            <h4>Total <span>$383.00</span></h4>
-                                        </div>
-                                        <div class="shopping-cart-button">
-                                            <a href="cart.html">View cart</a>
-                                            <a href="shop-checkout.php">Checkout</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                @livewire('cart-icon-component')
                             </div>
                             <div class="header-action-icon-2 d-block d-lg-none">
                                 <div class="burger-icon burger-icon-white">
@@ -450,13 +406,10 @@
             </div>
             <div class="mobile-header-content-area">
                 <div class="mobile-search search-style-3 mobile-header-border">
-                    <form action="#">
-                        <input type="text" placeholder="Search for items…">
-                        <button type="submit"><i class="fi-rs-search"></i></button>
-                    </form>
+                    @livewire('header-search-component')
                 </div>
                 <div class="mobile-menu-wrap mobile-header-border">
-                    <div class="main-categori-wrap mobile-header-border">
+                    {{-- <div class="main-categori-wrap mobile-header-border">
                         <a class="categori-button-active-2" href="#">
                             <span class="fi-rs-apps"></span> Browse Categories
                         </a>
@@ -473,13 +426,13 @@
                                 <li><a href="shop.html"><i class="surfsidemedia-font-kite"></i>Outdoor fun</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                     <!-- mobile menu start -->
                     <nav>
                         <ul class="mobile-menu">
                             <li class="menu-item-has-children"><span class="menu-expand"></span><a href="/">Home</a></li>
-                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="shop.html">shop</a></li>
-                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Our Collections</a>
+                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="{{ route('shop') }}">shop</a></li>
+                            {{-- <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Our Collections</a>
                                 <ul class="dropdown">
                                     <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Women's Fashion</a>
                                         <ul class="dropdown">
@@ -506,40 +459,40 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="menu-item-has-children"><span class="menu-expand"></span><a href="blog.html">Blog</a></li>
-                            <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Language</a>
+                            {{-- <li class="menu-item-has-children"><span class="menu-expand"></span><a href="#">Language</a>
                                 <ul class="dropdown">
                                     <li><a href="#">English</a></li>
                                     <li><a href="#">French</a></li>
                                     <li><a href="#">German</a></li>
                                     <li><a href="#">Spanish</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                         </ul>
                     </nav>
                     <!-- mobile menu end -->
                 </div>
                 <div class="mobile-header-info-wrap mobile-header-border">
                     <div class="single-mobile-header-info mt-30">
-                        <a href="contact.html"> Our location </a>
+                        <a href="https://www.facebook.com/AsZaychik/"> Contact Us </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="login.html">Log In </a>
+                        <a href="{{ route('login') }}">Log In </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="register.html">Sign Up</a>
+                        <a href="{{ route('register') }}">Sign Up</a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="#">(+62) 895-1975-0202 </a>
+                        <a href="https://wa.link/fnyw6m">(+62) 895-1975-0202 </a>
                     </div>
                 </div>
                 <div class="mobile-social-icon">
                     <h5 class="mb-15 text-grey-4">Follow Us</h5>
                     <a href="https://www.facebook.com/AsZaychik/"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt=""></a>
                     <a href="https://twitter.com/ZaychikAs"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a>
-                    <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt=""></a>
+                    {{-- <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt=""></a>
+                    <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt=""></a> --}}
                 </div>
             </div>
         </div>
@@ -614,11 +567,28 @@
                     <div class="col-lg-2  col-md-3">
                         <h5 class="widget-title wow fadeIn animated">My Account</h5>
                         <ul class="footer-list wow fadeIn animated">
-                            <li><a href="my-account.html">My Account</a></li>
+                            {{-- <li><a href="my-account.html">My Account</a></li>
                             <li><a href="#">View Cart</a></li>
                             <li><a href="#">My Wishlist</a></li>
                             <li><a href="#">Track My Order</a></li>
-                            <li><a href="#">Order</a></li>
+                            <li><a href="#">Order</a></li> --}}
+                            @auth
+                                {{-- <li><a href="#">My Account<i class="fi-rs-angle-down"></i></a> --}}
+                                @if (Auth::user()->utype == 'ADM')
+
+
+                                    <li><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+                                    <li><a href="{{ route('admin.products') }}">Products</a></li>
+                                    <li><a href="{{ route('admin.categories') }}">Categories</a></li>
+                                    <li><a href="{{ route('admin.home.slider') }}">Manage Slider</a></li>
+                                    {{-- <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Customers</a></li> --}}
+                                @else
+                                    <li><a href="{{ route('user.dashboard') }}">Dashboard</a></li>
+                                @endif
+                                {{-- </li> --}}
+                            @endif
                         </ul>
                     </div>
                     <div class="col-lg-4 mob-center">
