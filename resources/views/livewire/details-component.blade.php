@@ -68,9 +68,9 @@
                                     <div class="detail-info">
                                         <h2 class="title-detail">{{ $product->name }}</h2>
                                         <div class="product-detail-rating">
-                                            <div class="pro-details-brand">
+                                            {{-- <div class="pro-details-brand">
                                                 <span> Brands: <a href="shop.html">Bootstrap</a></span>
-                                            </div>
+                                            </div> --}}
                                             <div class="product-rate-cover text-end">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width:90%">
@@ -97,7 +97,7 @@
                                                 <li><i class="fi-rs-credit-card mr-5"></i> Cash on Delivery available</li>
                                             </ul>
                                         </div> --}}
-                                        <div class="attr-detail attr-color mb-15">
+                                        {{-- <div class="attr-detail attr-color mb-15">
                                             <strong class="mr-10">Color</strong>
                                             <ul class="list-filter color-filter">
                                                 <li><a href="#" data-color="Red"><span class="product-color-red"></span></a></li>
@@ -118,7 +118,7 @@
                                                 <li><a href="#">XL</a></li>
                                                 <li><a href="#">XXL</a></li>
                                             </ul>
-                                        </div>
+                                        </div> --}}
                                         <div class="bt-1 border-color-1 mt-30 mb-30"></div>
                                         <div class="detail-extralink">
                                             <div class="detail-qty border radius">
@@ -127,7 +127,10 @@
                                                 <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
                                             </div>
                                             <div class="product-extra-link2">
-                                                <button type="button" class="button button-add-to-cart" wire:click.prevent="store({{ $product->id}}, '{{ $product->name}}', {{ $product->regular_price}})">Add to cart</button>
+                                                <button type="button" class="button button-add-to-cart"
+                                                wire:click.prevent="store({{ $product->id }}, '{{ $product->name }}', {{ $product->regular_price }})">
+                                                    Add to cart
+                                                </button>
                                                 <a aria-label="Add To Wishlist" class="action-btn hover-up" href="wishlist.php"><i class="fi-rs-heart"></i></a>
                                                 <a aria-label="Compare" class="action-btn hover-up" href="compare.php"><i class="fi-rs-shuffle"></i></a>
                                             </div>
